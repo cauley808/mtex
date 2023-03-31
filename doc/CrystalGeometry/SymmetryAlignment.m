@@ -15,7 +15,7 @@
 % First we import the stiffness tensor Forsterite with respect to the axes
 % alignment
 
-cs = crystalSymmetry('mmm',[4.7646 10.2296 5.9942],'mineral','Olivin');
+cs = crystalSymmetry('mmm',[4.7646 10.2296 5.9942],'mineral','Olivine');
 
 % import some stiffness tensor
 fname = fullfile(mtexDataPath,'tensor','Olivine1997PC.GPa');
@@ -27,7 +27,7 @@ plot(C)
 % Let us now consider a different setup of the Forsterite symmetry, where
 % the $\vec a$ axis is the longest and the $\vec c$-axis is the shortest.
 
-cs_new = crystalSymmetry('mmm',[10.2296 5.9942 4.7646],'mineral','Olivin')
+cs_new = crystalSymmetry('mmm',[10.2296 5.9942 4.7646],'mineral','Olivine')
 
 %%
 % In order to represent the stiffness tensor |C| with respect to this
